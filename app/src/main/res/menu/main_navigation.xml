@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/feed_activity_nav"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:onClick="onClickFeed"
+        android:title="@string/feed" />
+    <item
+        android:id="@+id/new_post_nav"
+        android:icon="@drawable/ic_add_box_black_24dp"
+        android:onClick="onClickNewPost"
+        android:title="@string/create"/>
+    <item
+        android:id="@+id/my_activity_nav"
+        android:icon="@drawable/ic_person_black_24dp"
+        android:onClick="onClickMyActivity"
+        android:title="@string/my_activity" />
+</menu>

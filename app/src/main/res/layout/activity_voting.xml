@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/votingTitleText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        android:textSize="20sp"
+        android:text="@string/title" />
+
+    <TextView
+        android:id="@+id/votingUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:layout_below="@id/votingTitleText"
+        android:text="@string/username" />
+
+    <TextView
+        android:id="@+id/votingDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/votingUsername"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        android:text="@string/description" />
+
+    <TextView
+        android:id="@+id/votingGuide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textStyle="italic"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:layout_below="@id/votingDescription"
+        android:text="@string/select_any_image_and_click_the_vote_button_to_cast_your_vote" />
+
+    <ScrollView
+        android:id="@+id/scrollViewImages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:layout_below="@id/votingGuide">
+        <LinearLayout
+            android:id="@+id/votingImagesLinearLayout"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

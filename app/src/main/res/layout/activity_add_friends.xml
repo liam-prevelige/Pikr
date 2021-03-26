@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/add_friends_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:text="@string/friends_header" />
+
+    <TextView
+        android:id="@+id/add_friends_subheader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_friends_header"
+        android:paddingTop="5dp"
+        android:paddingBottom="10dp"
+        android:text="@string/friends_subheader"
+        android:textColor="@color/blue"
+        android:textSize="14sp"
+        android:textStyle="italic" />
+
+    <View
+        android:id="@+id/first_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/add_friends_subheader"
+        android:background="@android:color/darker_gray"/>
+
+    <EditText
+        android:id="@+id/search_friends_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/friend_s_email"
+        android:padding="10dp"
+        android:layout_below="@+id/first_divider"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp"
+        android:maxLines="1"
+        android:inputType="textEmailAddress" />
+    <Button
+        android:id="@+id/search_friends_button"
+        android:text="@string/send_friend_request"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_friends_text"/>
+
+    <View
+        android:id="@+id/second_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/search_friends_text"
+        android:background="@android:color/darker_gray"/>
+
+<!--    <TextView-->
+<!--        android:id="@+id/my_friends_text"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:paddingTop="20dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/search_friends_button"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="20sp"-->
+<!--        android:text="@string/my_friends" />-->
+    <LinearLayout
+        android:id="@+id/button_format"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_below="@+id/search_friends_button"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/my_friends_button"
+            style="@style/FirebaseUI.Text"
+            android:textColor="@color/blue"
+            android:text="@string/my_friends"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+        <Button
+            android:id="@+id/received_button"
+            style="@style/FirebaseUI.Text"
+            android:text="@string/received"
+            android:layout_width="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:layout_height="match_parent"/>
+        <Button
+            android:id="@+id/sent_button"
+            style="@style/FirebaseUI.Text"
+            android:text="@string/sent"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/my_friends_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/button_format"
+        android:divider="@color/light_blue"
+        android:dividerHeight="1dp"/>
+
+</RelativeLayout>

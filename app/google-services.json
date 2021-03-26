@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "383407077952",
+    "firebase_url": "https://pikr-cs65.firebaseio.com",
+    "project_id": "pikr-cs65",
+    "storage_bucket": "pikr-cs65.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:383407077952:android:d35250f979aa5a4963bda5",
+        "android_client_info": {
+          "package_name": "com.example.pikr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "383407077952-91n93to46btoevqc5fevp2srf7e41277.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.pikr",
+            "certificate_hash": "13fa56aab5bedf2379652a85cb4d496b83239c54"
+          }
+        },
+        {
+          "client_id": "383407077952-712dblj4k02ulsjo09fio3kai6h6uqea.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXSwKL9muwtsvJX3FCdfMm2HDUoaP76UI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "383407077952-712dblj4k02ulsjo09fio3kai6h6uqea.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/post_title_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:hint="@string/title"
+        android:textColor="@color/blue" />
+
+    <TextView
+        android:id="@+id/user_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/blue"
+        android:layout_below="@+id/post_title_text"
+        android:textSize="12sp"
+        android:textStyle="italic"
+        android:hint="@string/poster_name" />
+
+    <ProgressBar
+        android:id="@+id/progress_view"
+        style="?android:attr/progressBarStyleLarge"
+        android:background="@color/pale_red"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/user_text"
+        android:paddingTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="5dp"/>
+
+    <ImageButton
+        android:visibility="invisible"
+        android:id="@+id/postImageButton"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:paddingBottom="5dp"
+        android:paddingTop ="5dp"
+        android:background="@color/pale_red"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:layout_below="@id/user_text"/>
+<!--    android:src="@mipmap/ic_launcher_round"-->
+    <TextView
+        android:id="@+id/description_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:background="@drawable/rectangle"
+        android:layout_below="@+id/postImageButton"
+        android:hint="@string/post_description"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:layout_below="@+id/description_text">
+<!--        <Button-->
+<!--            android:id="@+id/previous_button"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:background="@color/light_blue"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:text="@string/previous"/>-->
+
+
+
+    </LinearLayout>
+</RelativeLayout>

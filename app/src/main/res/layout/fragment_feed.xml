@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:layout_editor_absoluteX="1dp"
+    android:layout_margin="5dp"
+    android:background="@color/background"
+    android:padding="10dp"
+    tools:layout_editor_absoluteY="1dp">
+
+    <TextView
+        android:id="@+id/feed_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_alignParentTop="true"
+        android:paddingBottom="10dp"
+        android:textStyle="italic"
+        android:textSize="14sp"
+        android:text="@string/current_feed"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/feed_type"
+        android:paddingBottom="10dp"
+        android:id="@+id/linear_layout">
+
+        <Button
+            android:id="@+id/public_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:text="@string/public_feed" />
+
+        <Space
+            android:layout_height="match_parent"
+            android:layout_width="30dp"/>
+        <Button
+            android:id="@+id/private_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:text="@string/private_feed" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/swipe_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:paddingBottom="10dp"
+        android:textStyle="italic"
+        android:layout_below="@+id/linear_layout"
+        android:text="Swipe to see more posts or Click to vote"/>
+
+    <View
+        android:id="@+id/second_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/swipe_text"
+        android:background="@color/blue"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/feed_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/second_divider">
+    </androidx.viewpager.widget.ViewPager>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/private_view_pager"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/swipe_text">
+    </androidx.viewpager.widget.ViewPager>
+</RelativeLayout>
