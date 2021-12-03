@@ -1,5 +1,5 @@
 # Pikr
-#### Created by Liam Prevelige & Will Dinauer
+### Created by Liam Prevelige & Will Dinauer
 
 Android application empowering users through group decision making. To get started, sign in or
 register a new account. Then, post polls with text and photos to have friends or the larger
